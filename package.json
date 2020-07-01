@@ -1,6 +1,6 @@
 {
   "name": "one-test-package",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/bundle.js",
   "files": [
@@ -23,28 +23,22 @@
   },
   "homepage": "https://github.com/cfzy1616/one-test-package#readme",
   "dependencies": {
-    "webpack-node-externals": "^1.7.2",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.12",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "style-loader": "^1.2.1",
-    "@babel/core": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "@babel/preset-react": "^7.10.1",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.6.0",
-    "less-loader": "^6.1.2"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^4.3.0",
-    "webpack-dev-server": "^3.11.0",
-    "style-loader": "^1.2.1",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
-    "less-loader": "^6.1.2"
+    "html-webpack-plugin": "^4.3.0",
+    "less-loader": "^6.1.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }
