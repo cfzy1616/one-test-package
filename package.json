@@ -7,9 +7,9 @@
     "dist"
   ],
   "scripts": {
-    "start": "webpack-dev-server",
-    "dev": "webpack-dev-server",
-    "build": "webpack"
+    "start": "export NODE_ENV='development' && webpack-dev-server",
+    "dev": "export NODE_ENV='development' && webpack-dev-server",
+    "build": "export NODE_ENV='production' && webpack"
   },
   "repository": {
     "type": "git",
