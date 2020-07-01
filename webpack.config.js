@@ -1,15 +1,21 @@
 const path = require('path');
 const NODE_ENV = process.env.NODE_ENV;
 const isProd = NODE_ENV === 'production';
-const htmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
+const outPath = isProd ? './dist' : '../dist';
+const plugins = isProd ? [] : [
+  new HtmlWebpackPlugin({
+    template: 'public/index.html'
+  }),
+]
 
 module.exports = {
   mode: isProd ? 'production' : 'development',
   entry: isProd ? './src/components/index.js' : './src/app.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, outPath),
   },
   module: {
     rules: [
@@ -32,9 +38,5 @@ module.exports = {
     contentBase: './dist'
   },
   externals: isProd ? [nodeExternals()] : [],
-  plugins: [
-    new htmlWebpackPlugin({
-      template: 'public/index.html'
-    })
-  ],
+  plugins,
 };
