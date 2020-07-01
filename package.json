@@ -1,5 +1,5 @@
 {
-  "name": "one-zy-test-package",
+  "name": "one-test-package",
   "version": "1.0.0",
   "description": "",
   "main": "dist/bundle.js",
@@ -15,7 +15,6 @@
     "type": "git",
     "url": "git+https://github.com/cfzy1616/one-test-package.git"
   },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": "",
   "license": "ISC",
   "bugs": {
